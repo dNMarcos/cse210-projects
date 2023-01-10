@@ -31,7 +31,7 @@ class Program
 
         int plsormin = perg%10;
         string letter2 = "";
-        if (plsormin >= 7 && letter != "A")
+        if (plsormin >= 7 && letter != "A" && letter != "F")
         {
             letter2 = "+";
         }
