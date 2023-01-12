@@ -10,6 +10,22 @@ class Program
 
         Console.WriteLine("What is your guess?");
         int guess_n = int.Parse(Console.ReadLine());
+
+        while(guess_n == maginumb)
+        {
+            if(guess_n > maginumb)
+            {
+                Console.WriteLine("Lower");
+            }
+            else if(guess_n < maginumb)
+            {
+                Console.WriteLine("Higher");
+            }
+            else
+            {
+                Console.WriteLine("Congratulations you guessed the magic number");
+            }
+        }
         
     }
 }
