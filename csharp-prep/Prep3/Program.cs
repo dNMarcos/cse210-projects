@@ -4,9 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        int cont = 0;
         int gn = 0;
-        string answ = " ";
-        while (answ == "yes")
+        string answ = "Y";
+        while (answ == "Y")
         {
             Random randomGenerator = new Random();
             int mn = randomGenerator.Next(1,100);
@@ -28,9 +29,13 @@ class Program
                 {
                     Console.WriteLine("Congratulation");
                 }
+                cont = cont + 1;
+                
             }
-            Console.WriteLine("Do you want to continue?");
+            Console.WriteLine($"The number of intents were: {cont}");
+            Console.WriteLine("Do you want to continue? (Y/N)");
             answ = Console.ReadLine();
+
         }
     }
 }
