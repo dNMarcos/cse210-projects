@@ -6,26 +6,34 @@ class Program
     {
         Random randomGenerator = new Random();
         int mn = randomGenerator.Next(1,100);
-
+        int count = 0;
         int gn = 0;
-        while (gn != mn)
+        string ans = "";
+        while (ans == "yes")
         {
-            Console.WriteLine("what is your guess?");
-            string guess = Console.ReadLine();
-            gn = int.Parse(guess);
+            while (gn != mn)
+            {
+                Console.WriteLine("what is your guess?");
+                string guess = Console.ReadLine();
+                gn = int.Parse(guess);
 
-            if (gn < mn)
-            {
-                Console.WriteLine("Higher");
+                if (gn < mn)
+                {
+                    Console.WriteLine("Higher");
+                }
+                else if (gn > mn)
+                {
+                    Console.WriteLine("Lower");
+                }
+                else
+                {
+                    Console.WriteLine("Congratulation");
+                }
+                count++;
+                Console.WriteLine(count);
             }
-            else if (gn > mn)
-            {
-                Console.WriteLine("Lower");
-            }
-            else
-            {
-                Console.WriteLine("Congratulation");
-            }
+            Console.WriteLine("Do you want to continue?");
+            ans = Console.ReadLine();
         }
     }
 }
