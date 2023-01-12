@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep3 World!");
+        Console.WriteLine("What is the magic number?");
+        string magi_n = Console.ReadLine();
+        int maginumb = int.Parse(magi_n);
     }
 }
