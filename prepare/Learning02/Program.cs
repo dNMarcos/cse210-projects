@@ -17,16 +17,6 @@ class Program
         job1.jobsDisp();
         job2.jobsDisp();
 
-        Resume myResume = new Resume();
-        myResume._personName = "Diana Marcos";
-        myResume._lJobs.Add(job1);
-        myResume._lJobs.Add(job2);
-
-        myResume.DispResume();
-
-
-
-
         /*Console.WriteLine("Hello Learning02 World!");*/
     }
 }
