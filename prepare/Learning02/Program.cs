@@ -14,8 +14,15 @@ class Program
         job2._company ="Apple";
         job2._startYear = 1999;
         job2._endYear = 2005;
-        job1.jobsDisp();
-        job2.jobsDisp();
+        /*job1.jobsDisp();
+        job2.jobsDisp();*/
+
+        Resume myResume = new Resume();
+        myResume._personName = "Allison Rose";
+
+        myResume._listaJ.Add(job1);
+        myResume._listaJ.Add(job2);
+        myResume.resuDisp();   
 
         /*Console.WriteLine("Hello Learning02 World!");*/
     }
